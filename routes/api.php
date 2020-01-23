@@ -14,6 +14,7 @@ use Illuminate\Http\Request;
 */
 
 Route::post('/login', 'Auth\LoginController@getToken');
+Route::post('/register', 'Auth\RegisterController@apiRegister');
 
 Route::group(['middleware' => 'auth:airlock'], function () {
     Route::post('/matrix/multiply', 'MatrixController@multiply')->name('matrix.multiply');
