@@ -16,6 +16,7 @@ How to setup the project for local development
 - Clone this repository
 - run `composer install`
 - edit the values of the `.env` files with your specific config values
+- run the database migrations and seeders `php artisan migrate --seed`
 
 ## Running on Local server
 - Run `php artisan serve` 
